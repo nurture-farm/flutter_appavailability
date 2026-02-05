@@ -15,14 +15,15 @@ buildscript {
 rootProject.allprojects {
     repositories {
         google()
-        jcenter()
+        mavenCentral()
     }
 }
 
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 28
+    namespace 'com.pichillilorenzo.flutter_appavailability'
+    compileSdkVersion 34
 
     defaultConfig {
         minSdkVersion 16
